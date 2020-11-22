@@ -19,6 +19,8 @@ double add(n){
 		sum += *(ptr + i);
 	}
 
+	free(ptr);
+
 	return sum;
 
 }
