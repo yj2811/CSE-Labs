@@ -33,8 +33,7 @@ int main(){
 			
 		}
 
-		// If frequency of the current element is not yet counted
-
+		// If frequency of the current element is not yet counted.
 		if(freq[i] != 0){
 			freq[i] = count;
 		}
