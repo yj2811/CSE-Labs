@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-void checkPalindrome(char* string){
+void checkPalindrome(char* str){
 
 	char *ptr, *rev; 
   
-    ptr = string;
+    ptr = str;
 
   	
     while (*ptr != '\0') { 
@@ -13,7 +13,7 @@ void checkPalindrome(char* string){
 
     --ptr;
 
-    for (rev = string; ptr >= rev;) { 
+    for (rev = str; ptr >= rev;) { 
         if (*ptr == *rev) { 
             --ptr; 
             rev++; 
