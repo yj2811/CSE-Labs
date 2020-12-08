@@ -21,6 +21,7 @@ public class Largest{
 		n2 = sc.nextInt();
 		n3 = sc.nextInt();
 
+		// Calling a static method from same class, no need for object.
 		ans = largestOfThree(n1, n2, n3);
 
 		System.out.println("The largest number is:" + ans);
