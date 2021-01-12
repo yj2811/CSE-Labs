@@ -23,18 +23,22 @@ int main(){
 
 	for(int i=0; i<n; i++){
 		count = 1;
-		for(int j = i+1; j<n; j++){
+		
+
+		// If frequency of the current element is not yet counted.
+		if(freq[i] != 0){
+			
+
+			for(int j = i+1; j<n; j++){
 			if(arr[i] == arr[j]){
 
 			count++;
 			freq[j] = 0; // Making sure not to count the frequency of the same element again.
 
-			}
+				}
 			
-		}
+			}
 
-		// If frequency of the current element is not yet counted.
-		if(freq[i] != 0){
 			freq[i] = count;
 		}
 	}
