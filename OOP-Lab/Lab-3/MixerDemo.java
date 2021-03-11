@@ -33,7 +33,7 @@ class Mixer {
 		for (i = 0; i < this.n; ++i)
 			newMixer.arr[i] = this.arr[i];
 		for (i = 0; i < A.n; ++i)
-			newMixer.arr[this.n+i] = A.arr[i];
+			newMixer.arr[this.n + i] = A.arr[i];
 		return newMixer;
 	}
 	
